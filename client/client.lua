@@ -1,6 +1,6 @@
 local blacklist = lib.load("config.blacklist")
 
-for model, toggle in ipairs(blacklist) do
+for model, toggle in pairs(blacklist) do
     SetVehicleModelIsSuppressed(model, toggle)
 end
 
